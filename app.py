@@ -19,9 +19,11 @@ import gc
 from pathlib import Path
 from huggingface_hub import snapshot_download
 from faster_whisper import WhisperModel
+from pathlib import Path
 
+root_path = str(Path.cwd().parent)
+ 
 # fish_speech_path = f"{root_path}/fish-speech-colab/fish-speech"
-fish_speech_path = os.path.join(os.getcwd(), "fish-speech")
 sys.path.append(fish_speech_path)
 
 from fish_speech.models.text2semantic.inference import init_model, generate_long
