@@ -105,7 +105,7 @@ def download_model(
   
 # Example usage
 # pip install huggingface-hub
-# from hf_hub import download_model
+# from hf_mirror import download_model
 # download_model(
 #     "ACE-Step/Ace-Step1.5",
 #     download_folder="./model",
